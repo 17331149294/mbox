@@ -84,7 +84,7 @@ jobs:
         run: |
           mkdir -p dist
           go build --ldflags '-s -w' -o dist/sing-box \
-            -tags "with_quic,with_grpc,with_wireguard,with_utls,with_reality_server,with_clash_api,with_v2ray_api" \
+            -tags "with_quic,with_grpc,with_wireguard,with_utls,with_clash_api,with_v2ray_api" \
             ./cmd/sing-box
         env:
           CGO_ENABLED: "0"
